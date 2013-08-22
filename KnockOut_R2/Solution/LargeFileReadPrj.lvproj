@@ -29,6 +29,7 @@
 			<Item Name="TDMS_Open.vi" Type="VI" URL="../MySolution/TDMS_Open.vi"/>
 			<Item Name="TDMS_ReadEveryGap.vi" Type="VI" URL="../MySolution/TDMS_ReadEveryGap.vi"/>
 			<Item Name="TDMS_Close.vi" Type="VI" URL="../MySolution/TDMS_Close.vi"/>
+			<Item Name="TDMS_ReadBetweenCurs.vi" Type="VI" URL="../MySolution/TDMS_ReadBetweenCurs.vi"/>
 		</Item>
 		<Item Name="TestDemo" Type="Folder">
 			<Item Name="ArrayPushQueue.vi" Type="VI" URL="../TestDemo/ArrayPushQueue.vi"/>
