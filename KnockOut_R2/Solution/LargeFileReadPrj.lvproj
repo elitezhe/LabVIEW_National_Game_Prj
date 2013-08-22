@@ -1,6 +1,7 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="11008008">
 	<Item Name="我的电脑" Type="My Computer">
+		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.tcp.enabled" Type="Bool">false</Property>
@@ -11,25 +12,33 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="DataFiles" Type="Folder">
-			<Item Name="Data.tdms" Type="Document" URL="../TestDemo/Data.tdms"/>
-			<Item Name="Large.dat" Type="Document" URL="../TestDemo/Large.dat"/>
-			<Item Name="wave.txt" Type="Document" URL="../TestDemo/wave.txt"/>
+			<Item Name="LargeWf.tdms" Type="Document" URL="../MySolution/LargeWf.tdms"/>
+			<Item Name="LargeWf.tdms_index" Type="Document" URL="../MySolution/LargeWf.tdms_index"/>
+		</Item>
+		<Item Name="DataType" Type="Folder">
+			<Item Name="LgFileType.ctl" Type="VI" URL="../MySolution/LgFileType.ctl"/>
+			<Item Name="XCTLDataIn.ctl" Type="VI" URL="../MySolution/XCTLDataIn.ctl"/>
+			<Item Name="CursorPosQueueCluster.ctl" Type="VI" URL="../MySolution/XCTL/CursorPosQueueCluster.ctl"/>
+			<Item Name="Position.ctl" Type="VI" URL="../MySolution/XCTL/Position.ctl"/>
 		</Item>
 		<Item Name="TDMS" Type="Folder">
-			<Item Name="TDMS_Open.vi" Type="VI" URL="../MySolution/TDMS_Open.vi"/>
-			<Item Name="TDMS_ReadEveryGap.vi" Type="VI" URL="../MySolution/TDMS_ReadEveryGap.vi"/>
+			<Property Name="NI.SortType" Type="Int">3</Property>
+			<Item Name="TDMS_GeneSampleFile.vi" Type="VI" URL="../MySolution/TDMS_GeneSampleFile.vi"/>
 			<Item Name="TDMS_TestDemo.vi" Type="VI" URL="../TestDemo/TDMS_TestDemo.vi"/>
 			<Item Name="TDMS_View.vi" Type="VI" URL="../MySolution/TDMS_View.vi"/>
+			<Item Name="TDMS_Open.vi" Type="VI" URL="../MySolution/TDMS_Open.vi"/>
+			<Item Name="TDMS_ReadEveryGap.vi" Type="VI" URL="../MySolution/TDMS_ReadEveryGap.vi"/>
+			<Item Name="TDMS_Close.vi" Type="VI" URL="../MySolution/TDMS_Close.vi"/>
 		</Item>
 		<Item Name="TestDemo" Type="Folder">
 			<Item Name="ArrayPushQueue.vi" Type="VI" URL="../TestDemo/ArrayPushQueue.vi"/>
 			<Item Name="Demo_1.vi" Type="VI" URL="../TestDemo/Demo_1.vi"/>
 			<Item Name="GenerateBin.vi" Type="VI" URL="../TestDemo/GenerateBin.vi"/>
-			<Item Name="GenerateTdms.vi" Type="VI" URL="../TestDemo/GenerateTdms.vi"/>
 			<Item Name="TdmsReadLargeFile.vi" Type="VI" URL="../TestDemo/TdmsReadLargeFile.vi"/>
 			<Item Name="WriteReadWaveFile.vi" Type="VI" URL="../TestDemo/WriteReadWaveFile.vi"/>
 		</Item>
 		<Item Name="WaveFormGraph.xctl" Type="XControl" URL="../MySolution/XCTL/WaveFormGraph.xctl"/>
+		<Item Name="NISAST Event.lvclass" Type="LVClass" URL="/F/Program Files/National Instruments/LabVIEW 2011/resource/importtools/Common/Event/NISAST Event.lvclass"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name=" Write Waveform to File.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTFileIO.llb/ Write Waveform to File.vi"/>
@@ -109,6 +118,7 @@
 				<Item Name="Write Waveforms to File.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTFileIO.llb/Write Waveforms to File.vi"/>
 				<Item Name="Write WDT Array Dlog File+.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTFileIO.llb/Write WDT Array Dlog File+.vi"/>
 				<Item Name="XControlSupport.lvlib" Type="Library" URL="/&lt;vilib&gt;/_xctls/XControlSupport.lvlib"/>
+				<Item Name="LVCursorListTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVCursorListTypeDef.ctl"/>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/F/Program Files/National Instruments/LabVIEW 2011/resource/lvanlys.dll"/>
 		</Item>

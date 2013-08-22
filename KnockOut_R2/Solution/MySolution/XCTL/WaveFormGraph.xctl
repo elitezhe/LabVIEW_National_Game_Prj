@@ -7,6 +7,9 @@
 	<Property Name="NI.XItem.Express" Type="Bool">false</Property>
 	<Property Name="NI.XItem.Name" Type="Str">XControl 1</Property>
 	<Property Name="NI.XItem.SupportsFatalErrorOut" Type="Bool">false</Property>
+	<Item Name="Daemon" Type="Folder">
+		<Item Name="DaemonServ.vi" Type="VI" URL="../DaemonServ.vi"/>
+	</Item>
 	<Item Name="Data.ctl" Type="Ability VI" URL="../Data.ctl">
 		<Property Name="NI.XItem.Name" Type="Str">Data</Property>
 	</Item>
@@ -18,5 +21,8 @@
 	</Item>
 	<Item Name="State.ctl" Type="Ability VI" URL="../State.ctl">
 		<Property Name="NI.XItem.Name" Type="Str">State</Property>
+	</Item>
+	<Item Name="UnInit.vi" Type="Ability VI" URL="../UnInit.vi">
+		<Property Name="NI.XItem.Name" Type="Str">UnInit</Property>
 	</Item>
 </XControl>
